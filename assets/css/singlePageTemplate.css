@@ -2,23 +2,26 @@
 /* Body */
 
 .startbutton {
-	position: absolute;
+	/* position: absolute; */
+	padding-top: 5px;
 	top: 200px;
-	left: 0;
-	right: 0;
-	height: 90px;
+	bottom: 0px;
+	height: 40px;
 	color: white;
-	width: 100%;
-	text-align: center;
-	margin: auto;
+	background-color: black;
+	width: 20%;
 	font-size: 40px;
-	line-height: 40px;
-	letter-spacing: spacing 5px;text-shadow: -2px 0 0 #fdff2a,
+	/* line-height: 40px; */
+	/* letter-spacing: spacing 5px; */
+	text-shadow: -2px 0 0 #fdff2a,
 	-4px 0 0 #df4a42,
 	2px 0 0 #91fcfe,
 	4px 0 0 #4405fc;
 	font-family: 'Press Start 2P', cursive;
-
+	outline-width: 5px;
+	outline-color: lavender;
+	outline-style: double;
+	outline-width: unset;
 	
 }
 body {
@@ -504,9 +507,8 @@ nav ul li {
 }
 
 .form {
+	align-items: center;
 	text-align: center;
 	padding-top: 100px;
 	
-	
-
 }
