@@ -114,7 +114,7 @@
     </div>
     <div class="col-sm-2 well">
       <div class="thumbnail">
-        <p>Frineds Online</p>
+        <p>Friends Online</p>
         <img src="" alt="Icons" width="400" height="300">
         <p><strong>Chat</strong></p>
         <p></p>
@@ -153,6 +153,13 @@
         input.value = '';
       }
     });
+
+    socket.on('chat message', function(msg) {
+    var item = document.createElement('li');
+    item.textContent = msg;
+    messages.appendChild(item);
+    window.scrollTo(0, document.body.scrollHeight);
+  });
   </script>
 <script src="./assets/js/script.js"></script>
 
