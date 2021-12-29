@@ -5,7 +5,7 @@ const server = http.createServer(app);
 const { server } = require("socket.io");
 const io = new server(server);
 
-app.get('/', (req, res) => {
+ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
   });
   
@@ -37,28 +37,6 @@ io.on('connection', (socket) => {
       io.emit('chat message', msg);
     });
   });
-  <script>
-  var socket = io();
-
-  var messages = document.getElementById('messages');
-  var form = document.getElementById('form');
-  var input = document.getElementById('input');
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    if (input.value) {
-      socket.emit('chat message', input.value);
-      input.value = '';
-    }
-  });
-
-  socket.on('chat message', function(msg) {
-    var item = document.createElement('li');
-    item.textContent = msg;
-    messages.appendChild(item);
-    window.scrollTo(0, document.body.scrollHeight);
-  });
-</script>
 
 
 
