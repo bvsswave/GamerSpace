@@ -4,7 +4,7 @@
   <title>GamerSpace</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./css/index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>    
@@ -139,20 +139,20 @@
 <body>
   <!--content-->
   GamerSpace
-  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.socket.io/4.4.0/socket.io.min.js"></script>
   <script>
     var socket = io();
   
     var form = document.getElementById('form');
     var input = document.getElementById('input');
   
-    form.addEventListener('submit', function(e) {
+   /* form.addEventListener('submit', function(e) {
       e.preventDefault();
       if (input.value) {
         socket.emit('chat message', input.value);
         input.value = '';
       }
-    });
+    });*/
 
     socket.on('chat message', function(msg) {
     var item = document.createElement('li');
@@ -161,7 +161,7 @@
     window.scrollTo(0, document.body.scrollHeight);
   });
   </script>
-<script src="./assets/js/script.js"></script>
+<script src="./js/script.js"></script>
 
 </body>
 </html>
