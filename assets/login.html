@@ -8,20 +8,28 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
-  <style>
+  <!-- <style>
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-</style>
+</style> -->
 
 <body>
+  <img class="logo" src="./gamerspacelogo.png"></img>
     <br>
-    <div>GamerSpace</div>
     <br>
     <form class="login">
+      <label for="Username"></label>
+      <input type="text" placeholder="Your Username" name="username" id="Username" class="login-input">
+      <label for="Password"></label>
+          <input type="password" placeholder="Password" name="password" id="Password" class="login-input">
+          <br>
+          <br>
+          <button id="loginBtn" class="startbutton" type="submit">LOGIN</button>
+          <p id="error"></p>
+    <!-- <form class="login">
         <label for="Username"></label>
         <input type="text" placeholder="Your Username" name="username" id="Username" class="login-input">
         <label for="Password"></label>
             <input type="password" placeholder="Password" name="password" id="Password" class="login-input">
-
+    </form> -->
+  </head>
 </body>
-</head>
-<body>
