@@ -1,11 +1,11 @@
-html {
+/* html {
     margin: 0;
     padding: 0;
     height: 100%;
-}
+} */
 
 body {
-    font-family: 'Press Start 2P', cursive;
+    /* font-family: 'Press Start 2P', cursive; */
     background-image: repeating-linear-gradient(#010101,#7D25A3);
     /* background: repeating-linear-gradient(
         to bottom,
@@ -19,7 +19,9 @@ body {
     max-width: 50%;
     position: absolute;
     align-content: center;
-    padding: 35px 400px 300px 200px;
+    text-align: center;
+    flex-wrap: flex;
+    padding: 0px 300px 300px 350px;
     /* top: 0;
     left: 0;
     bottom: 0;
@@ -64,6 +66,7 @@ body {
 } */
 
 .login {
-    margin: 300px;
+    margin: 400px;
     text-align: center;
+    
 }
