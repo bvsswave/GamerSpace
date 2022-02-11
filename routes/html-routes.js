@@ -1,11 +1,15 @@
 const path = require("path")
-const express
-const exphbs
+const express = require('express');
+const exphbs = require("express-handlebars")
 const router = express.Router();
 const app = express();
 
 app.engine
-//go to index.js and pull all those lines
+//go to index.js and pull all those linesserver.engine('handlbars', exphbs({ defaultLayout: 'main'}));
+server.set('view engine', 'handlebars');
+
+require('./routes/api-routes.js')(app);
+require("./routes/html-routes.js")(app);
 
 module.exports = function(app){
     app.get("/login", (req, res) => {
